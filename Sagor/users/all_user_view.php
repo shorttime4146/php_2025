@@ -23,7 +23,7 @@ if ($conn->connect_error) {
   ?>
    
 
-<table border="1" cellpadding="1" cellspeacing="1">
+<table border="1" cellpadding="1" cellspacing="1">
      <thead> 
         <tr>
         <th width="30px">Id</th>
@@ -39,7 +39,7 @@ if ($conn->connect_error) {
     <?php
     //eikhan e aber php er kaj suru hoyse tai aber php start tag disi
    
-  while($row = $result->fetch_assoc()) {
+		while($row = $result->fetch_assoc()) {
     ?>
       <tr> 
         <td width="30px"> <?php echo  $row["id"];?></td> 
@@ -52,7 +52,7 @@ if ($conn->connect_error) {
         <td width="100px"> <a href="user_update_view.php?id=<?php echo $row["id"];?>">Update</a></td>
         <td width="100px"> <a href="user_delete.php?id=<?php echo $row["id"];?>">Delete</a></td>
       </tr>
-      <?}?>
+	<?}?>
 
       </tbody>
     </table>

@@ -1,18 +1,18 @@
 <?php 
-	$server="localhost";
-	$user="root";
-	$password="";
-	$database="hr_management";
-	$conn=new mysqli($server, $user, $password, $database);
-	
-	if($conn->connect_error){
-		die("Database Connection Failed." .$conn->connect_error);
-	}else{
-		echo"Database Connect Successfully." ."</br>";
-	}
-	
-	$nm=""; $age="", $phn=""; $eml=""; $pass=""; $con_pass="";$role_id=0; $location_id=0; $country_id=0;
-	//print_r($_POST);die;
+    $server="localhost";
+    $user="root";
+    $pass="";
+    $database="hr_management";
+    $conn=new mysqli($server, $user, $pass, $database);
+    if($conn->connect_error){
+        die("Database Connetion Failed.".$conn->connect_error);        
+    }else{
+       echo"Database Connection Successful."."</br>";
+    }
+
+    $nm=""; $age=""; $phn=""; $eml=""; $pass=""; $con_pass=""; $role_id=0; $location_id=0; 
+    $country_id=0; $update_id="";
+
 	if($_SERVER["REQUEST_METHOD"] =="POST"){
 		if($_POST["name"] !=""){
 			$nm=$_POST["name"];
@@ -41,9 +41,12 @@
 		if($_POST["country_id"] !=""){
 			$country_id=$_POST["country_id"];
 		}
+        if($_POST["update_id"] !=""){
+			$update_id=$_POST["update_id"];
+		}
 		
-		$data="insert into users(name, age, phone, email, password, confirm_password,role_id, location_id, country_id)
-				value('$nm', '$age', '$phn', '$eml', '$pass', '$con_pass', '$role_id', '$location_id', '$country_id')";
+		$data="update users set name='$nm', age='$age', phone='$phn', email='$eml', password='$pass', 
+            confirm_password='$con_pass', role_id='$role_id', location_id='$location_id', country_id='$country_id' where id=$update_id";
 		if($conn->query($data) ==1){
 			echo"Data Insert Successfully.";
 		}else{
@@ -51,3 +54,4 @@
 		}
 	}
 ?>
+ 
