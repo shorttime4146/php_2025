@@ -47,10 +47,10 @@
             <td witdh="50px"><?php echo $row['location_id']; ?></td>
             <td witdh="50px"><?php echo $row['country_id']; ?></td>
             <td width="50px">
-                <a href="update_form.php? id=<?php echo $row['id']; ?>">Update</a>
+                <a href="update_form.php?id=<?php echo $row['id']; ?>">Update</a>
             </td>
             <td width="50px">
-                <a href="delete.php? id=<?php echo $row['id']; ?>">Delete</a>
+                <a href="delete.php?id=<?php echo $row['id']; ?>">Delete</a>
             </td>
         </tr>
 

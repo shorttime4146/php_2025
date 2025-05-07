@@ -21,19 +21,19 @@
     <head></head>
     <body>
         <form action="update.php" method="post"> 
-            <input type="hidden" name="id" value="<?php echo $data['id']; ?>"></br></br>
+            <input type="hidden" name="update_id" value="<?php echo $data['id']; ?>"></br></br>
             Name:</br>
-                <input type="taxt" name="name" value="<?php echo $row['name']; ?>"></br></br>
+                <input type="taxt" name="name" value="<?php echo $data['name']; ?>"></br></br>
             Age:</br>
-                <input type="number" name="age" value="<?php echo $row['age']; ?>"></br></br>
+                <input type="number" name="age" value="<?php echo $data['age']; ?>"></br></br>
             Phone:</br>
-                <input type="number" name="phone" value="<?php echo $row['phone']; ?>"></br></br>
+                <input type="number" name="phone" value="<?php echo $data['phone']; ?>"></br></br>
             Email:</br>
-                <input type="email" name="email" value="<?php echo $row['email']; ?>"></br></br>
+                <input type="email" name="email" value="<?php echo $data['email']; ?>"></br></br>
             Password:</br>
-                <input type="password" name="password" value="<?php echo $row['password']; ?>"></br></br>
+                <input type="password" name="password" value="<?php echo $data['password']; ?>"></br></br>
             Confirm Password:</br>
-                <input type="password" name="confirm_password" value="<?php echo $row['confirm_password']; ?>"></br></br>
+                <input type="password" name="confirm_password" value="<?php echo $data['confirm_password']; ?>"></br></br>
 
             <?php 
                 $data="select id,name from roles";
@@ -45,9 +45,10 @@
                     while($row=$role_data->fetch_assoc()){
                         $selected="";
                         $role_id=$row['id'];
-                        if($data['role_id'] ==$role_id){
+                        if($data["role_id"] ==$role_id){
                             $selected="selected";
                         }
+                      
                 ?>
                 <option value="<?php echo $row['id']; ?>" <?php echo $selected; ?> > <?php echo $row['name']; ?> </option>
                 <?php 
@@ -57,12 +58,12 @@
 
             <?php 
                 $data="select id,address from locations";
-                $address_data=$conn->query($data);
+                $location_data=$conn->query($data);
             ?>
-            <select name="address_id">
+            <select name="location_id">
                 <option value="0">Select Location</option>
                 <?php 
-                    while($row=$address_data->fetch_assoc()){
+                    while($row=$location_data->fetch_assoc()){
                 ?>
                 <option value="<?php echo $row['id']; ?>"> <?php echo $row['address']; ?> </option>
                 <?php 
