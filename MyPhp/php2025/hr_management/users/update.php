@@ -48,7 +48,7 @@
 		$data="update users set name='$nm', age='$age', phone='$phn', email='$eml', password='$pass',  confirm_password='$con_pass', 
 			role_id='$role_id', location_id='$location_id', country_id='$country_id' where id=$update_id";
 		if($conn->query($data) ==1){
-			echo"Data Insert Successfully.";
+			echo"Data Update Successfully.";
 		}else{
 			echo"error." .$data ."</br>" .$conn->error;
 		}

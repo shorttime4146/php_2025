@@ -34,7 +34,6 @@
         <?php 
             while($row=$view->fetch_assoc()){
         ?>
-
         <tr>
             <td witdh="30px"><?php echo $row['id']; ?></td>
             <td witdh="100px"><?php echo $row['name']; ?></td>

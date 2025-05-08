@@ -42,15 +42,9 @@
             <select name="role_id">
                 <option value="0">Select Role</option>
                 <?php 
-                    while($row=$role_data->fetch_assoc()){
-                        $selected="";
-                        $role_id=$row['id'];
-                        if($data["role_id"] ==$role_id){
-                            $selected="selected";
-                        }
-                      
+                    while($row=$role_data->fetch_assoc()){                      
                 ?>
-                <option value="<?php echo $row['id']; ?>" <?php echo $selected; ?> > <?php echo $row['name']; ?> </option>
+                <option value="<?php echo $row['id']; ?>"> <?php echo $row['name']; ?> </option>
                 <?php 
                     }
                 ?>

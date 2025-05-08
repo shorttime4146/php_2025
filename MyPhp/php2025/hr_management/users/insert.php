@@ -11,7 +11,7 @@
 		echo"Database Connect Successfully." ."</br>";
 	}
 	
-	$nm=""; $age="", $phn=""; $eml=""; $pass=""; $con_pass="";$role_id=0; $location_id=0; $country_id=0;
+	$nm=""; $age=""; $phn=""; $eml=""; $pass=""; $con_pass=""; $role_id=0; $location_id=0; $country_id=0;
 	//print_r($_POST);die;
 	if($_SERVER["REQUEST_METHOD"] =="POST"){
 		if($_POST["name"] !=""){

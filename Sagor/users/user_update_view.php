@@ -47,7 +47,7 @@
                         if($data['role_id']==$role_id){ 
                             $selected="selected";
                         } 
-				  ?>				
+				?>				
 				<option value="<?php echo $row['id'];?>" <? echo $selected;?>><?php echo $row['name'];?></option>					 
 				<?php
 					}
