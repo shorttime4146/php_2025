@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 08, 2025 at 10:28 AM
+-- Generation Time: May 09, 2025 at 07:19 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -159,8 +159,7 @@ CREATE TABLE `employees` (
 --
 
 INSERT INTO `employees` (`id`, `first_name`, `last_name`, `email`, `phone`, `joining_date`, `location_id`, `job_id`, `department_id`, `salary_id`, `resign_date`, `comision`, `religion_id`, `employee_code`) VALUES
-(1, 'Md', 'Mamun', 'mamun@gmail.com', 1928, '0000-00-00 00:00:00', 0, 0, 1, 0, '0000-00-00', 0, 0, 0),
-(2, 'SI', 'Rita', 'rita@gmail.com', 16125, '0000-00-00 00:00:00', 0, 1, 1, 1, '0000-00-00', 0, 0, 0);
+(1, 'Md', 'Mamun', 'mamun@gmail.com', 1928, '0000-00-00 00:00:00', 0, 0, 1, 0, '0000-00-00', 0, 0, 0);
 
 -- --------------------------------------------------------
 

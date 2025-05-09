@@ -12,9 +12,12 @@
     }
 
     $sql="select * from employee";
-    $result=$conn->query($sql);
+    $result=$conn->query($sql);eikhan e sob data nia ayse
 	
-	
+    
+	eikhan e select er kaj kora apache_request_headerse
+    emne koira sob table gula korben
+
 	
 ?>
 
@@ -41,7 +44,8 @@
         <?php
 		
 	 
-            while($row=$result->fetch_assoc()){
+            while($row=$result->fetch_assoc()){eikhan e loop er maddome show korse
+                eita to janen each=hmm
         ?>
 
         <tr>
