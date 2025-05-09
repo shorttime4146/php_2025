@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 08, 2025 at 10:28 AM
+-- Generation Time: May 10, 2025 at 12:17 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -159,8 +159,7 @@ CREATE TABLE `employees` (
 --
 
 INSERT INTO `employees` (`id`, `first_name`, `last_name`, `email`, `phone`, `joining_date`, `location_id`, `job_id`, `department_id`, `salary_id`, `resign_date`, `comision`, `religion_id`, `employee_code`) VALUES
-(1, 'Md', 'Mamun', 'mamun@gmail.com', 1928, '0000-00-00 00:00:00', 0, 0, 1, 0, '0000-00-00', 0, 0, 0),
-(2, 'SI', 'Rita', 'rita@gmail.com', 16125, '0000-00-00 00:00:00', 0, 1, 1, 1, '0000-00-00', 0, 0, 0);
+(1, 'Md', 'Mamun', 'mamun@gmail.com', 1928, '0000-00-00 00:00:00', 0, 0, 1, 0, '0000-00-00', 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -406,7 +405,8 @@ INSERT INTO `users` (`id`, `name`, `age`, `phone`, `email`, `password`, `confirm
 (1, 'Suraya Islam', 23, 161257, 'suraiyaislam4288@gmail.com', '143', '143', 1, 1, 1),
 (2, 'Mamun Ahmed', 30, 192578, 'mamunahmed@gmail.com', '420', '420', 2, 1, 1),
 (3, 'SI.Rita', 23, 1331666, 'rita@gmail.com', '6162', '6162', 3, 2, 1),
-(4, 'MA.Sagor', 40, 1928966, 'sagor@gmail.com', '46162', '46162', 3, 1, 1);
+(4, 'MA.Sagor', 40, 1928966, 'sagor@gmail.com', '46162', '46162', 3, 1, 1),
+(6, 'chitarbatpar', NULL, NULL, 'chitarbatpar@gmail.com', '420', '', NULL, NULL, NULL);
 
 --
 -- Indexes for dumped tables
@@ -642,7 +642,7 @@ ALTER TABLE `salary`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

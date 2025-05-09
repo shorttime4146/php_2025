@@ -54,7 +54,10 @@
             <td width="100px"><?php echo $row['religion_id']; ?></td>
             <td width="100px">
                 <a href="update_form.php?id=<?php echo $row['id']; ?>">Update</a>
-            </td>                            
+            </td>
+            <td width="100px">
+                <a href="delete.php?id=<?php echo $row['id']; ?>">Delete</a>
+            </td>                             
         </tr>
         <?php 
             }
