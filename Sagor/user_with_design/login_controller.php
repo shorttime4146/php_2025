@@ -30,9 +30,12 @@
          $row = $result->fetch_assoc();
          if(is_countable($row)>0){
             $name=$row['name'];
-            echo "$name ! welcome to our website";
+            // echo "$name ! welcome to our website";
+			header("Location: http://localhost/php_2025/Sagor/AdminLTE-4.0.0-beta3/");
          }else{
-            echo "plz registration first";
+            
+			header("Location: register_with_design.php");
+			exit();
          }
       
 		 
