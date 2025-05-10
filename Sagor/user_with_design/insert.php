@@ -13,7 +13,7 @@
 	
 	$nm=""; $phn=""; $eml=""; $pass=""; $con_pass="";$role_id=0; $location_id=0; $country_id=0;
 	//print_r($_POST);die;
-	if($_SERVER["REQUEST_METHOD"] =="POST"){
+	//if($_SERVER["REQUEST_METHOD"] =="POST"){
 		if($_POST["name"] !=""){
 			$nm=$_POST["name"];
 		}
@@ -36,5 +36,5 @@
 		}else{
 			echo"error." .$data ."</br>" .$conn->error;
 		}
-	}
+	//}
 ?>
