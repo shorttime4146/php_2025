@@ -1,3 +1,6 @@
+<!doctype html>
+<html lang="en">
+  <!--begin::Head-->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>AdminLTE v4 | Dashboard</title>
@@ -56,3 +59,6 @@
       crossorigin="anonymous"
     />
   </head>
+  <body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
+    <!--begin::App Wrapper-->
+    <div class="app-wrapper">  
