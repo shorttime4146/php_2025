@@ -143,7 +143,7 @@
                   <div class="d-flex">
                     <div class="flex-shrink-0">
                       <img
-                        src="../../dist/assets/img/user3-128x128.jpg"
+                        src="assets/img/user3-128x128.jpg"
                         alt="User Avatar"
                         class="img-size-50 rounded-circle me-3"
                       />
@@ -208,7 +208,7 @@
             <li class="nav-item dropdown user-menu">
               <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                 <img
-                  src="../../dist/assets/img/user2-160x160.jpg"
+                  src="assets/img/user2-160x160.jpg"
                   class="user-image rounded-circle shadow"
                   alt="User Image"
                 />
@@ -218,7 +218,7 @@
                 <!--begin::User Image-->
                 <li class="user-header text-bg-primary">
                   <img
-                    src="../../dist/assets/img/user2-160x160.jpg"
+                    src="assets/img/user2-160x160.jpg"
                     class="rounded-circle shadow"
                     alt="User Image"
                   />
@@ -259,10 +259,10 @@
         <!--begin::Sidebar Brand-->
         <div class="sidebar-brand">
           <!--begin::Brand Link-->
-          <a href="./index.html" class="brand-link">
+          <a href="index.html" class="brand-link">
             <!--begin::Brand Image-->
             <img
-              src="../../dist/assets/img/AdminLTELogo.png"
+              src="assets/img/AdminLTELogo.png"
               alt="AdminLTE Logo"
               class="brand-image opacity-75 shadow"
             />
@@ -294,19 +294,19 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="./index.html" class="nav-link">
+                    <a href="index.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Dashboard v1</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./index2.html" class="nav-link active">
+                    <a href="index2.html" class="nav-link active">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Dashboard v2</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./index3.html" class="nav-link">
+                    <a href="index3.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Dashboard v3</p>
                     </a>
@@ -314,7 +314,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a href="./generate/theme.html" class="nav-link">
+                <a href="generate/theme.html" class="nav-link">
                   <i class="nav-icon bi bi-palette"></i>
                   <p>Theme Generate</p>
                 </a>
@@ -329,19 +329,19 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="./widgets/small-box.html" class="nav-link">
+                    <a href="widgets/small-box.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Small Box</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./widgets/info-box.html" class="nav-link">
+                    <a href="widgets/info-box.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>info Box</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./widgets/cards.html" class="nav-link">
+                    <a href="widgets/cards.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Cards</p>
                     </a>
@@ -359,43 +359,43 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="./layout/unfixed-sidebar.html" class="nav-link">
+                    <a href="layout/unfixed-sidebar.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Default Sidebar</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/fixed-sidebar.html" class="nav-link">
+                    <a href="layout/fixed-sidebar.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Fixed Sidebar</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/layout-custom-area.html" class="nav-link">
+                    <a href="layout/layout-custom-area.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Layout <small>+ Custom Area </small></p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/sidebar-mini.html" class="nav-link">
+                    <a href="layout/sidebar-mini.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Sidebar Mini</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/collapsed-sidebar.html" class="nav-link">
+                    <a href="layout/collapsed-sidebar.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Sidebar Mini <small>+ Collapsed</small></p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/logo-switch.html" class="nav-link">
+                    <a href="layout/logo-switch.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Sidebar Mini <small>+ Logo Switch</small></p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./layout/layout-rtl.html" class="nav-link">
+                    <a href="layout/layout-rtl.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Layout RTL</p>
                     </a>
@@ -412,19 +412,19 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="./UI/general.html" class="nav-link">
+                    <a href="UI/general.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>General</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./UI/icons.html" class="nav-link">
+                    <a href="UI/icons.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Icons</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./UI/timeline.html" class="nav-link">
+                    <a href="UI/timeline.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Timeline</p>
                     </a>
@@ -441,7 +441,7 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="./forms/general.html" class="nav-link">
+                    <a href="forms/general.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>General Elements</p>
                     </a>
@@ -458,7 +458,7 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="./tables/simple.html" class="nav-link">
+                    <a href="tables/simple.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Simple Tables</p>
                     </a>
@@ -485,13 +485,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                       <li class="nav-item">
-                        <a href="./examples/login.html" class="nav-link">
+                        <a href="examples/login.html" class="nav-link">
                           <i class="nav-icon bi bi-circle"></i>
                           <p>Login</p>
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="./examples/register.html" class="nav-link">
+                        <a href="examples/register.html" class="nav-link">
                           <i class="nav-icon bi bi-circle"></i>
                           <p>Register</p>
                         </a>
@@ -508,13 +508,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                       <li class="nav-item">
-                        <a href="./examples/login-v2.html" class="nav-link">
+                        <a href="examples/login-v2.html" class="nav-link">
                           <i class="nav-icon bi bi-circle"></i>
                           <p>Login</p>
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="./examples/register-v2.html" class="nav-link">
+                        <a href="examples/register-v2.html" class="nav-link">
                           <i class="nav-icon bi bi-circle"></i>
                           <p>Register</p>
                         </a>
@@ -522,7 +522,7 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a href="./examples/lockscreen.html" class="nav-link">
+                    <a href="examples/lockscreen.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Lockscreen</p>
                     </a>
@@ -531,19 +531,19 @@
               </li>
               <li class="nav-header">DOCUMENTATIONS</li>
               <li class="nav-item">
-                <a href="./docs/introduction.html" class="nav-link">
+                <a href="docs/introduction.html" class="nav-link">
                   <i class="nav-icon bi bi-download"></i>
                   <p>Installation</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./docs/layout.html" class="nav-link">
+                <a href="docs/layout.html" class="nav-link">
                   <i class="nav-icon bi bi-grip-horizontal"></i>
                   <p>Layout</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./docs/color-mode.html" class="nav-link">
+                <a href="docs/color-mode.html" class="nav-link">
                   <i class="nav-icon bi bi-star-half"></i>
                   <p>Color Mode</p>
                 </a>
@@ -558,13 +558,13 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="./docs/components/main-header.html" class="nav-link">
+                    <a href="docs/components/main-header.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Main Header</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./docs/components/main-sidebar.html" class="nav-link">
+                    <a href="docs/components/main-sidebar.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Main Sidebar</p>
                     </a>
@@ -581,7 +581,7 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="./docs/javascript/treeview.html" class="nav-link">
+                    <a href="docs/javascript/treeview.html" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Treeview</p>
                     </a>
@@ -589,25 +589,25 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a href="./docs/browser-support.html" class="nav-link">
+                <a href="docs/browser-support.html" class="nav-link">
                   <i class="nav-icon bi bi-browser-edge"></i>
                   <p>Browser Support</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./docs/how-to-contribute.html" class="nav-link">
+                <a href="docs/how-to-contribute.html" class="nav-link">
                   <i class="nav-icon bi bi-hand-thumbs-up-fill"></i>
                   <p>How To Contribute</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./docs/faq.html" class="nav-link">
+                <a href="docs/faq.html" class="nav-link">
                   <i class="nav-icon bi bi-question-circle-fill"></i>
                   <p>FAQ</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./docs/license.html" class="nav-link">
+                <a href="docs/license.html" class="nav-link">
                   <i class="nav-icon bi bi-patch-check-fill"></i>
                   <p>License</p>
                 </a>
@@ -971,7 +971,7 @@
                             <!-- /.direct-chat-infos -->
                             <img
                               class="direct-chat-img"
-                              src="../../dist/assets/img/user1-128x128.jpg"
+                              src="assets/img/user1-128x128.jpg"
                               alt="message user image"
                             />
                             <!-- /.direct-chat-img -->
@@ -992,7 +992,7 @@
                             <!-- /.direct-chat-infos -->
                             <img
                               class="direct-chat-img"
-                              src="../../dist/assets/img/user3-128x128.jpg"
+                              src="assets/img/user3-128x128.jpg"
                               alt="message user image"
                             />
                             <!-- /.direct-chat-img -->
@@ -1009,7 +1009,7 @@
                             <!-- /.direct-chat-infos -->
                             <img
                               class="direct-chat-img"
-                              src="../../dist/assets/img/user1-128x128.jpg"
+                              src="assets/img/user1-128x128.jpg"
                               alt="message user image"
                             />
                             <!-- /.direct-chat-img -->
@@ -1030,7 +1030,7 @@
                             <!-- /.direct-chat-infos -->
                             <img
                               class="direct-chat-img"
-                              src="../../dist/assets/img/user3-128x128.jpg"
+                              src="assets/img/user3-128x128.jpg"
                               alt="message user image"
                             />
                             <!-- /.direct-chat-img -->
@@ -1047,7 +1047,7 @@
                               <a href="#">
                                 <img
                                   class="contacts-list-img"
-                                  src="../../dist/assets/img/user1-128x128.jpg"
+                                  src="assets/img/user1-128x128.jpg"
                                   alt="User Avatar"
                                 />
                                 <div class="contacts-list-info">
@@ -1067,7 +1067,7 @@
                               <a href="#">
                                 <img
                                   class="contacts-list-img"
-                                  src="../../dist/assets/img/user7-128x128.jpg"
+                                  src="assets/img/user7-128x128.jpg"
                                   alt="User Avatar"
                                 />
                                 <div class="contacts-list-info">
@@ -1085,7 +1085,7 @@
                               <a href="#">
                                 <img
                                   class="contacts-list-img"
-                                  src="../../dist/assets/img/user3-128x128.jpg"
+                                  src="assets/img/user3-128x128.jpg"
                                   alt="User Avatar"
                                 />
                                 <div class="contacts-list-info">
@@ -1103,7 +1103,7 @@
                               <a href="#">
                                 <img
                                   class="contacts-list-img"
-                                  src="../../dist/assets/img/user5-128x128.jpg"
+                                  src="assets/img/user5-128x128.jpg"
                                   alt="User Avatar"
                                 />
                                 <div class="contacts-list-info">
@@ -1121,7 +1121,7 @@
                               <a href="#">
                                 <img
                                   class="contacts-list-img"
-                                  src="../../dist/assets/img/user6-128x128.jpg"
+                                  src="assets/img/user6-128x128.jpg"
                                   alt="User Avatar"
                                 />
                                 <div class="contacts-list-info">
@@ -1139,7 +1139,7 @@
                               <a href="#">
                                 <img
                                   class="contacts-list-img"
-                                  src="../../dist/assets/img/user8-128x128.jpg"
+                                  src="assets/img/user8-128x128.jpg"
                                   alt="User Avatar"
                                 />
                                 <div class="contacts-list-info">
@@ -1205,7 +1205,7 @@
                           <div class="col-3 p-2">
                             <img
                               class="img-fluid rounded-circle"
-                              src="../../dist/assets/img/user1-128x128.jpg"
+                              src="assets/img/user1-128x128.jpg"
                               alt="User Image"
                             />
                             <a
@@ -1219,7 +1219,7 @@
                           <div class="col-3 p-2">
                             <img
                               class="img-fluid rounded-circle"
-                              src="../../dist/assets/img/user1-128x128.jpg"
+                              src="assets/img/user1-128x128.jpg"
                               alt="User Image"
                             />
                             <a
@@ -1233,7 +1233,7 @@
                           <div class="col-3 p-2">
                             <img
                               class="img-fluid rounded-circle"
-                              src="../../dist/assets/img/user7-128x128.jpg"
+                              src="assets/img/user7-128x128.jpg"
                               alt="User Image"
                             />
                             <a
@@ -1247,7 +1247,7 @@
                           <div class="col-3 p-2">
                             <img
                               class="img-fluid rounded-circle"
-                              src="../../dist/assets/img/user6-128x128.jpg"
+                              src="assets/img/user6-128x128.jpg"
                               alt="User Image"
                             />
                             <a
@@ -1261,7 +1261,7 @@
                           <div class="col-3 p-2">
                             <img
                               class="img-fluid rounded-circle"
-                              src="../../dist/assets/img/user2-160x160.jpg"
+                              src="assets/img/user2-160x160.jpg"
                               alt="User Image"
                             />
                             <a
@@ -1275,7 +1275,7 @@
                           <div class="col-3 p-2">
                             <img
                               class="img-fluid rounded-circle"
-                              src="../../dist/assets/img/user5-128x128.jpg"
+                              src="assets/img/user5-128x128.jpg"
                               alt="User Image"
                             />
                             <a
@@ -1289,7 +1289,7 @@
                           <div class="col-3 p-2">
                             <img
                               class="img-fluid rounded-circle"
-                              src="../../dist/assets/img/user4-128x128.jpg"
+                              src="assets/img/user4-128x128.jpg"
                               alt="User Image"
                             />
                             <a
@@ -1303,7 +1303,7 @@
                           <div class="col-3 p-2">
                             <img
                               class="img-fluid rounded-circle"
-                              src="../../dist/assets/img/user3-128x128.jpg"
+                              src="assets/img/user3-128x128.jpg"
                               alt="User Image"
                             />
                             <a
@@ -1362,7 +1362,7 @@
                           <tr>
                             <td>
                               <a
-                                href="pages/examples/invoice.html"
+                                href="examples/invoice.html"
                                 class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                 >OR9842</a
                               >
@@ -1374,7 +1374,7 @@
                           <tr>
                             <td>
                               <a
-                                href="pages/examples/invoice.html"
+                                href="examples/invoice.html"
                                 class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                 >OR1848</a
                               >
@@ -1386,7 +1386,7 @@
                           <tr>
                             <td>
                               <a
-                                href="pages/examples/invoice.html"
+                                href="examples/invoice.html"
                                 class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                 >OR7429</a
                               >
@@ -1398,7 +1398,7 @@
                           <tr>
                             <td>
                               <a
-                                href="pages/examples/invoice.html"
+                                href="examples/invoice.html"
                                 class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                 >OR7429</a
                               >
@@ -1410,7 +1410,7 @@
                           <tr>
                             <td>
                               <a
-                                href="pages/examples/invoice.html"
+                                href="examples/invoice.html"
                                 class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                 >OR1848</a
                               >
@@ -1422,7 +1422,7 @@
                           <tr>
                             <td>
                               <a
-                                href="pages/examples/invoice.html"
+                                href="examples/invoice.html"
                                 class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                 >OR7429</a
                               >
@@ -1434,7 +1434,7 @@
                           <tr>
                             <td>
                               <a
-                                href="pages/examples/invoice.html"
+                                href="examples/invoice.html"
                                 class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                 >OR9842</a
                               >
@@ -1575,7 +1575,7 @@
                       <div class="d-flex border-top py-2 px-1">
                         <div class="col-2">
                           <img
-                            src="../../dist/assets/img/default-150x150.png"
+                            src="../assets/img/default-150x150.png"
                             alt="Product Image"
                             class="img-size-50"
                           />
@@ -1592,7 +1592,7 @@
                       <div class="d-flex border-top py-2 px-1">
                         <div class="col-2">
                           <img
-                            src="../../dist/assets/img/default-150x150.png"
+                            src="../assets/img/default-150x150.png"
                             alt="Product Image"
                             class="img-size-50"
                           />
@@ -1630,7 +1630,7 @@
                       <div class="d-flex border-top py-2 px-1">
                         <div class="col-2">
                           <img
-                            src="../../dist/assets/img/default-150x150.png"
+                            src="../assets/img/default-150x150.png"
                             alt="Product Image"
                             class="img-size-50"
                           />
@@ -1699,7 +1699,7 @@
       crossorigin="anonymous"
     ></script>
     <!--end::Required Plugin(Bootstrap 5)--><!--begin::Required Plugin(AdminLTE)-->
-    <script src="../../dist/js/adminlte.js"></script>
+    <script src="assets/js/adminlte.js"></script>
     <!--end::Required Plugin(AdminLTE)--><!--begin::OverlayScrollbars Configure-->
     <script>
       const SELECTOR_SIDEBAR_WRAPPER = '.sidebar-wrapper';
