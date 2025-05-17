@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 10, 2025 at 12:17 AM
+-- Generation Time: May 18, 2025 at 12:30 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -253,6 +253,23 @@ CREATE TABLE `leave_entry` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `lib_menu`
+--
+
+CREATE TABLE `lib_menu` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) DEFAULT NULL,
+  `insert_by` int(100) DEFAULT NULL,
+  `insert_date` date DEFAULT NULL,
+  `update_by` int(100) DEFAULT NULL,
+  `update_date` date DEFAULT NULL,
+  `status_active` int(100) DEFAULT NULL,
+  `is_deleted` int(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `loan_apply`
 --
 
@@ -289,6 +306,23 @@ CREATE TABLE `locations` (
 INSERT INTO `locations` (`id`, `address`, `pastel_code`, `city_id`, `division_id`, `country_id`) VALUES
 (1, '406/A sipahibag,Khilgaon', 1219, 1, 1, 1),
 (2, '409/A Shipahibag,Khilgaon', NULL, 1, 1, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `module`
+--
+
+CREATE TABLE `module` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) DEFAULT NULL,
+  `insert_by` int(100) DEFAULT NULL,
+  `insert_date` date DEFAULT NULL,
+  `update_by` int(100) DEFAULT NULL,
+  `update_date` date DEFAULT NULL,
+  `status_active` int(100) DEFAULT NULL,
+  `is_deleted` int(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -479,6 +513,12 @@ ALTER TABLE `leave_entry`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `lib_menu`
+--
+ALTER TABLE `lib_menu`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `loan_apply`
 --
 ALTER TABLE `loan_apply`
@@ -488,6 +528,12 @@ ALTER TABLE `loan_apply`
 -- Indexes for table `locations`
 --
 ALTER TABLE `locations`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `module`
+--
+ALTER TABLE `module`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -597,6 +643,12 @@ ALTER TABLE `leave_entry`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `lib_menu`
+--
+ALTER TABLE `lib_menu`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `loan_apply`
 --
 ALTER TABLE `loan_apply`
@@ -607,6 +659,12 @@ ALTER TABLE `loan_apply`
 --
 ALTER TABLE `locations`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `module`
+--
+ALTER TABLE `module`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `months`
