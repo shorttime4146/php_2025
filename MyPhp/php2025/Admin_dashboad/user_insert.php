@@ -11,7 +11,7 @@
 		echo"Database Connect Successfully." ."</br>";
 	}
 	
-	$nm=""; $age=""; $phn=""; $eml=""; $pass=""; $con_pass=""; $role_id=0; $location_id=0; $country_id=0;
+	$nm=""; $age=""; $phn=""; $eml=""; $pass=""; $con_pass=""; 
 	//print_r($_POST);die;
 	if($_SERVER["REQUEST_METHOD"] =="POST"){
 		if($_POST["name"] !=""){
@@ -32,18 +32,10 @@
 		if($_POST["confirm_password"] !=""){
 			$con_pass=$_POST["confirm_password"]; 
 		}
-		if($_POST["role_id"] !=""){
-			$role_id=$_POST["role_id"]; 
-		}
-		if($_POST["location_id"] !=""){
-			$location_id=$_POST["location_id"];
-		}
-		if($_POST["country_id"] !=""){
-			$country_id=$_POST["country_id"];
-		}
 		
-		$data="insert into users(name, age, phone, email, password, confirm_password,role_id, location_id, country_id)
-				value('$nm', '$age', '$phn', '$eml', '$pass', '$con_pass', '$role_id', '$location_id', '$country_id')";
+		
+		$data="insert into users(name, age, phone, email, password, confirm_password)
+				value('$nm', '$age', '$phn', '$eml', '$pass', '$con_pass')";
 		if($conn->query($data) ==1){
 			echo"Data Insert Successfully.";
 		}else{
