@@ -7,7 +7,7 @@
     if($conn->connect_error){
         die("Database Connetion Failed.".$conn->connect_error);        
     }else{
-       // echo"Database Connection Successful."."</br>";
+       echo"Database Connection Successful."."</br>";
     }
 
     $data="select * from users";
@@ -53,7 +53,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="card mb-12">
-                  <div class="card-header"><h3 class="card-title">Bordered Table</h3></div>
+                  <div class="card-header"><h3 class="card-title">User Table</h3></div>
                   <!-- /.card-header -->
                   <div class="card-body">
                     <table class="table table-bordered">
@@ -88,10 +88,10 @@
                             <td witdh="50px"><?php echo $row['location_id']; ?></td>
                             <td witdh="50px"><?php echo $row['country_id']; ?></td>
                             <td width="50px">
-                              <a href="update_form.php?id=<?php echo $row['id']; ?>">Update</a>
+                              <a href="user_update_form.php?id=<?php echo $row['id']; ?>">Update</a>
                             </td>
                             <td width="50px">
-                              <a href="delete.php?id=<?php echo $row['id']; ?>">Delete</a>
+                              <a href="user_delete.php?id=<?php echo $row['id']; ?>">Delete</a>
                             </td>
                         </tr>
                         <?php 

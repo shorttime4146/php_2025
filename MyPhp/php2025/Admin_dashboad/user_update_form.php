@@ -1,4 +1,21 @@
+<?php 
+    $server="localhost";
+    $user="root";
+    $pass="";
+    $database="hr_management";
+    $conn=new mysqli($server, $user, $pass, $database);
+    if($conn->connect_error){
+        die("Database Connection Failed.".$conn->connect_error);
+    }else{
+        echo"Database Connection Successful."."</br>";
+    }
 
+    $id=$_GET['id'];  
+ 
+    $sql="select * from users where id=$id";
+    $update=$conn->query($sql);
+    $data=$update->fetch_assoc();
+?>
 
   <!--begin::Head--> 
   <?php require 'header.php'; ?>
@@ -18,11 +35,11 @@
           <div class="container-fluid">
             <!--begin::Row-->
             <div class="row">
-              <div class="col-sm-6"><h3 class="mb-0">User Form</h3></div>
+              <div class="col-sm-6"><h3 class="mb-0">User Update Form</h3></div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-end">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">User Form</li>
+                  <li class="breadcrumb-item active" aria-current="page">User Update Form</li>
                 </ol>
               </div>
             </div>
@@ -60,29 +77,29 @@
                 <!--begin::Horizontal Form-->
                 <div class="card card-warning card-outline mb-12">
                   <!--begin::Header-->
-                  <div class="card-header"><div class="card-title">User Form</div></div>
+                  <div class="card-header"><div class="card-title">User Update Form</div></div>
                   <!--end::Header-->
                   <!--begin::Form-->
-                  <form action="update.php" method="post">
+                  <form action="user_update.php" method="post">
                     <!--begin::Body-->
                     <div class="card-body">
-					<input type="hidden" name="update_id" value="<?php echo $data['id']; ?>"></br></br>
+						<input type="hidden" name="update_id" value="<?php echo $data['id']; ?>">
                       <div class="row mb-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+                        <label for="name" class="col-sm-2 col-form-label">Name</label>
                         <div class="col-sm-10">
-                          <input type="taxt" name="name" class="form-control" id="inputEmail3" value="<?php echo $data['name']; ?>"/>
+                          <input type="taxt" name="name" class="form-control" id="name" value="<?php echo $data['name']; ?>"/>
                         </div>
                       </div>
                       <div class="row mb-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">Age</label>
+                        <label for="age" class="col-sm-2 col-form-label">Age</label>
                         <div class="col-sm-10">
-                          <input type="number" name="age" class="form-control" id="inputEmail3" value="<?php echo $data['age']; ?>"/>
+                          <input type="number" name="age" class="form-control" id="age" value="<?php echo $data['age']; ?>"/>
                         </div>
                       </div>
                       <div class="row mb-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">Phone</label>
+                        <label for="phone" class="col-sm-2 col-form-label">Phone</label>
                         <div class="col-sm-10">
-                          <input type="number" name="phone" class="form-control" id="inputEmail3" value="<?php echo $data['phone']; ?>"/>
+                          <input type="number" name="phone" class="form-control" id="phone" value="<?php echo $data['phone']; ?>"/>
                         </div>
                       </div>
                       <div class="row mb-3">

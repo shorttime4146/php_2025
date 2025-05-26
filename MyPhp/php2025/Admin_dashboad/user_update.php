@@ -10,8 +10,7 @@
        echo"Database Connection Successful."."</br>";
     }
 
-    $nm=""; $age=""; $phn=""; $eml=""; $pass=""; $con_pass=""; $role_id=0; $location_id=0; 
-    $country_id=0; $update_id=0;
+    $nm=""; $age=""; $phn=""; $eml=""; $pass=""; $con_pass=""; $update_id=0;
 
 	if($_SERVER["REQUEST_METHOD"] =="POST"){
 		if($_POST["name"] !=""){
@@ -31,24 +30,15 @@
 		}
 		if($_POST["confirm_password"] !=""){
 			$con_pass=$_POST["confirm_password"]; 
-		}
-		if($_POST["role_id"] !=""){
-			$role_id=$_POST["role_id"]; 
-		}
-		if($_POST["location_id"] !=""){
-			$location_id=$_POST["location_id"];
-		}
-		if($_POST["country_id"] !=""){
-			$country_id=$_POST["country_id"];
-		}
+		}		
         if($_POST["update_id"] !=""){
 			$update_id=$_POST["update_id"];
 		}
 		
-		$data="update users set name='$nm', age='$age', phone='$phn', email='$eml', password='$pass',  confirm_password='$con_pass', 
-			role_id='$role_id', location_id='$location_id', country_id='$country_id' where id=$update_id";
-		if($conn->query($data) ==1){
-			echo"Data Update Successfully.";
+		$data="update users set name='$nm', age='$age', phone='$phn', email='$eml', password='$pass',  confirm_password='$con_pass'
+			where id=$update_id";
+		if($conn->query($data) ==1){			 
+			header("Location: user_all_data_view.php"); 
 		}else{
 			echo"error." .$data ."</br>" .$conn->error;
 		}

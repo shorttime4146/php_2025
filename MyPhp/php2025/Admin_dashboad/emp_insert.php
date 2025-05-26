@@ -37,7 +37,8 @@
 		$data="insert into users(name, age, phone, email, password, confirm_password)
 				value('$nm', '$age', '$phn', '$eml', '$pass', '$con_pass')";
 		if($conn->query($data) ==1){
-			header("Location:user_all_data_view.php");
+			//header("Location:user_all_data_view.php");
+			echo"successful";
 		}else{
 			echo"error." .$data ."</br>" .$conn->error;
 		}

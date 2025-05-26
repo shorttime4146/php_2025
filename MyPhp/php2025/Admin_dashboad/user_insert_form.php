@@ -1,4 +1,10 @@
-
+<?php
+	$server="localhost";
+	$user="root";
+	$password="";
+	$database="hr_management";
+	$conn=new mysqli($server, $user, $password, $database);
+?>
 
   <!--begin::Head--> 
   <?php require 'header.php'; ?>
@@ -37,21 +43,7 @@
           <div class="container-fluid">
             <!--begin::Row-->
             <div class="row g-4">
-              <!--begin::Col-->
-              <div class="col-12">
-                <div class="callout callout-info">
-                  For detailed documentation of Form visit
-                  <a
-                    href="https://getbootstrap.com/docs/5.3/forms/overview/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="callout-link"
-                  >
-                    Bootstrap Form
-                  </a>
-                </div>
-              </div>
-              <!--end::Col-->
+              
               <!--begin::Col-->
               <div class="col-md-12">
                 <!--begin::Quick Example-->
@@ -67,21 +59,21 @@
                     <!--begin::Body-->
                     <div class="card-body">
                       <div class="row mb-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+                        <label for="name" class="col-sm-2 col-form-label">Name</label>
                         <div class="col-sm-10">
-                          <input type="taxt" name="name" class="form-control" id="inputEmail3" />
+                          <input type="taxt" name="name" class="form-control" id="name" />
                         </div>
                       </div>
                       <div class="row mb-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">Age</label>
+                        <label for="age" class="col-sm-2 col-form-label">Age</label>
                         <div class="col-sm-10">
-                          <input type="number" name="age" class="form-control" id="inputEmail3" />
+                          <input type="number" name="age" class="form-control" id="age" />
                         </div>
                       </div>
                       <div class="row mb-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">Phone</label>
+                        <label for="phone" class="col-sm-2 col-form-label">Phone</label>
                         <div class="col-sm-10">
-                          <input type="number" name="phone" class="form-control" id="inputEmail3" />
+                          <input type="number" name="phone" class="form-control" id="phone" />
                         </div>
                       </div>
                       <div class="row mb-3">
