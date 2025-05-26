@@ -201,7 +201,7 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="tables/user_all_data_view.php" class="nav-link"> 
+                    <a href="tables/simple.html" class="nav-link"> 
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Simple Tables</p>
                     </a>
@@ -218,7 +218,15 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="tables/user_all_data_view.php" class="nav-link"> 
+                    <a href="user_insert_form.php" class="nav-link"> 
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>User Insert Form</p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="user_all_data_view.php" class="nav-link"> 
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Users All data views</p>
                     </a>
