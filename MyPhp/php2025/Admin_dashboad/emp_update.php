@@ -11,7 +11,7 @@
 	}
 	
 	$fn=""; $ln=""; $phn=""; $eml=""; $comi=0; $ec=0; $jd=""; $rd=""; $salary_id=""; $department_id=""; 
-	$job_id=""; $location_id=""; $religion_id="";
+	$job_id=""; $location_id=""; $religion_id=""; $update_id="";
 	if($_SERVER["REQUEST_METHOD"] =="POST"){
 		if($_POST["first_name"] !=""){
 			$fn=$_POST["first_name"];
@@ -52,11 +52,15 @@
 		if($_POST["religion_id"] !=""){
 			$job_id=$_POST["religion_id"];
 		}
+        if($_POST["update_id"] !=""){
+			$update_id=$_POST["update_id"];
+		}
 		
-		$data="insert into employees(first_name, last_name, phone, email, comision, employee_code, joining_date, resign_date, salary_id, department_id, job_id, location_id, religion_id) 
-			value('$fn', '$ln', '$phn', '$eml', '$comi', '$ec', '$jd', '$rd', '$salary_id', '$department_id', '$job_id', '$location_id', '$religion_id')";
+		$data="update employees set first_name='$fn', last_name='$ln', phone='$phn', email='$eml', comision='$comi', 
+            employee_code='$ec', joining_date='$jd', resign_date='$rd', salary_id='$salary_id', department_id='$department_id',
+            job_id='$job_id', location_id='$location_id', religion_id='$religion_id' where id=$update_id";
 		if($conn->query($data) ==1){
-			header("location:employee_all_data_view.php");
+			echo"Data Update Successfully.";
 		}else{
 			echo"Error." .$data ."</br>" .$conn->error;
 		}

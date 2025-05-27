@@ -257,6 +257,22 @@
 							</a>
 						</li>
 					</ul>
+					<ul class="nav nav-treeview">
+						<li class="nav-item">
+							<a href="employee_all_data_view.php" class="nav-link"> 
+								<i class="nav-icon bi bi-circle"></i>
+								<p>Employee All Data Views</p>
+							</a>
+						</li>
+					</ul>
+					<ul class="nav nav-treeview">
+						<li class="nav-item">
+							<a href="emp_update_form.php" class="nav-link"> 
+								<i class="nav-icon bi bi-circle"></i>
+								<p>Employee Update Form</p>
+							</a>
+						</li>
+					</ul>
 				</li>
               <li class="nav-header">EXAMPLES</li>
               <li class="nav-item">
