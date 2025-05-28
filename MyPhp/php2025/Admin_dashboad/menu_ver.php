@@ -210,7 +210,7 @@
               </li>
 				<li class="nav-item">
 					<a href="#" class="nav-link">
-						<i class="nav-icon bi bi-table"></i>
+						<i class="nav-icon bi bi-person-circle"></i>
 						<p>
 							Users
 							<i class="nav-arrow bi bi-chevron-right"></i>
@@ -243,7 +243,7 @@
 				</li>
 				<li class="nav-item">
 					<a href="#" class="nav-link">
-						<i class="nav-icon bi bi-table"></i>
+						<i class="nav-icon bi bi-people-fill"></i>
 						<p>
 							Employees
 							<i class="nav-arrow bi bi-chevron-right"></i>

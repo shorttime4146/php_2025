@@ -10,12 +10,12 @@
        //echo"Database Connection Successful."."</br>";
     }
 
-    /*$data="select a.id,a.first_name,a.last_name,a.email,a.phone,a.employee_code,a.joining_date,a.resign_date,a.comision,
+    $data="select a.id,a.first_name,a.last_name,a.email,a.phone,a.employee_code,a.joining_date,a.resign_date,a.comision,
 		b.amount,c.job_title,d.name,e.address,f.name from employees a,salary b,jobs	c,departments d,locations e,religions f
-		where a.salary_id=b.id and a.job_id=c.id and a.department_id=d.id and a.location_id=e.id and a.religion_id=f.id";*/
+		where a.salary_id=b.id and a.job_id=c.id and a.department_id=d.id and a.location_id=e.id and a.religion_id=f.id";
 	
-	   	$data="select * from employees";
-    $view=$conn->query($data); 
+	   	//$data="select * from employees";
+		$view=$conn->query($data); 
 ?>
 
   <!--begin::Head--> 
@@ -94,11 +94,11 @@
 							<td width="100px"><?php echo $row['joining_date']; ?></td>
 							<td width="100px"><?php echo $row['resign_date']; ?></td>
 							<td width="100px"><?php echo $row['comision']; ?></td>
-							<td width="100px"><?php //echo $row['amount']; ?></td>
-							<td width="100px"><?php //echo $row['job_title']; ?></td>
-							<td width="100px"><?php //echo $row['name']; ?></td>
-							<td width="100px"><?php //echo $row['address']; ?></td> 
-							<td width="100px"><?php// echo $row['name']; ?></td>
+							<td width="100px"><?php echo $row['amount']; ?></td>
+							<td width="100px"><?php echo $row['job_title']; ?></td>
+							<td width="100px"><?php echo $row['name']; ?></td>
+							<td width="100px"><?php echo $row['address']; ?></td> 
+							<td width="100px"><?php echo $row['name']; ?></td>
                             <td width="50px">
                               <a href="emp_update_form.php?id=<?php echo $row['id']; ?>">Update</a>
                             </td>

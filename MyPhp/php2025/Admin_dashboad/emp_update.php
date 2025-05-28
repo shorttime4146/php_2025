@@ -7,7 +7,7 @@
 	if($conn->connect_error){
 		die("Database Connection Failed.".$conn->connect_error);
 	}else{
-		echo"Database Connection Successfuly."."</br>";
+		//echo"Database Connection Successfuly."."</br>";
 	}
 	
 	$fn=""; $ln=""; $phn=""; $eml=""; $comi=0; $ec=0; $jd=""; $rd=""; $salary_id=""; $department_id=""; 
@@ -60,7 +60,7 @@
             employee_code='$ec', joining_date='$jd', resign_date='$rd', salary_id='$salary_id', department_id='$department_id',
             job_id='$job_id', location_id='$location_id', religion_id='$religion_id' where id=$update_id";
 		if($conn->query($data) ==1){
-			echo"Data Update Successfully.";
+			header("location:employee_all_data_view.php");
 		}else{
 			echo"Error." .$data ."</br>" .$conn->error;
 		}
