@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 26, 2025 at 09:07 PM
+-- Generation Time: Jun 02, 2025 at 06:21 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -159,7 +159,8 @@ CREATE TABLE `employees` (
 --
 
 INSERT INTO `employees` (`id`, `first_name`, `last_name`, `email`, `phone`, `joining_date`, `location_id`, `job_id`, `department_id`, `salary_id`, `resign_date`, `comision`, `religion_id`, `employee_code`) VALUES
-(1, 'Md', 'Mamun', 'mamun@gmail.com', 1928, '0000-00-00 00:00:00', 0, 0, 1, 0, '0000-00-00', 0, 0, 0);
+(1, 'Md', 'Mamun', 'mamun@gmail.com', 1928, '2025-05-28 07:54:23', 1, 2, 3, 1, '2024-09-30', 0, 1, 3868),
+(3, 'SI', 'Rita', 'sirita@gmail.com', 16125, '2025-05-28 07:54:33', 2, 1, 1, 1, '2025-05-31', 0, 1, 420);
 
 -- --------------------------------------------------------
 
@@ -259,12 +260,30 @@ CREATE TABLE `leave_entry` (
 CREATE TABLE `lib_menu` (
   `id` int(11) NOT NULL,
   `name` varchar(100) DEFAULT NULL,
-  `insert_by` int(100) DEFAULT NULL,
+  `inserted_by` int(100) DEFAULT NULL,
   `insert_date` date DEFAULT NULL,
-  `update_by` int(100) DEFAULT NULL,
+  `updated_by` int(100) DEFAULT NULL,
   `update_date` date DEFAULT NULL,
   `status_active` int(100) DEFAULT NULL,
   `is_deleted` int(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `lib_module`
+--
+
+CREATE TABLE `lib_module` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) DEFAULT NULL,
+  `insert_by` int(100) DEFAULT NULL,
+  `insert_date` timestamp NULL DEFAULT NULL,
+  `update_by` int(100) DEFAULT NULL,
+  `update_date` timestamp NULL DEFAULT NULL,
+  `status_active` int(100) DEFAULT NULL,
+  `is_deleted` int(100) DEFAULT NULL,
+  `sequence` int(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -306,23 +325,6 @@ CREATE TABLE `locations` (
 INSERT INTO `locations` (`id`, `address`, `pastel_code`, `city_id`, `division_id`, `country_id`) VALUES
 (1, '406/A sipahibag,Khilgaon', 1219, 1, 1, 1),
 (2, '409/A Shipahibag,Khilgaon', NULL, 1, 1, 1);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `module`
---
-
-CREATE TABLE `module` (
-  `id` int(11) NOT NULL,
-  `name` varchar(100) DEFAULT NULL,
-  `insert_by` int(100) DEFAULT NULL,
-  `insert_date` date DEFAULT NULL,
-  `update_by` int(100) DEFAULT NULL,
-  `update_date` date DEFAULT NULL,
-  `status_active` int(100) DEFAULT NULL,
-  `is_deleted` int(100) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -522,6 +524,12 @@ ALTER TABLE `lib_menu`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `lib_module`
+--
+ALTER TABLE `lib_module`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `loan_apply`
 --
 ALTER TABLE `loan_apply`
@@ -531,12 +539,6 @@ ALTER TABLE `loan_apply`
 -- Indexes for table `locations`
 --
 ALTER TABLE `locations`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `module`
---
-ALTER TABLE `module`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -619,7 +621,7 @@ ALTER TABLE `divisions`
 -- AUTO_INCREMENT for table `employees`
 --
 ALTER TABLE `employees`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `increment_history`
@@ -652,6 +654,12 @@ ALTER TABLE `lib_menu`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `lib_module`
+--
+ALTER TABLE `lib_module`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `loan_apply`
 --
 ALTER TABLE `loan_apply`
@@ -662,12 +670,6 @@ ALTER TABLE `loan_apply`
 --
 ALTER TABLE `locations`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT for table `module`
---
-ALTER TABLE `module`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `months`
