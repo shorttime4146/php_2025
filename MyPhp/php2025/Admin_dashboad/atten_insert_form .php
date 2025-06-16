@@ -29,11 +29,11 @@
           <div class="container-fluid">
             <!--begin::Row-->
             <div class="row">
-              <div class="col-sm-6"><h3 class="mb-0">Employee Insert Form</h3></div>
+              <div class="col-sm-6"><h3 class="mb-0">Attendance Insert Form</h3></div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-end">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Employee Form</li>
+                  <li class="breadcrumb-item active" aria-current="page">Attendance Form</li>
                 </ol>
               </div>
             </div>
@@ -56,158 +56,87 @@
                 <!--end::Input Group-->
                 <!--begin::Horizontal Form-->
                 <div class="card card-warning card-outline mb-12">
-                  <!--begin::Header-->
-                  <div class="card-header"><div class="card-title">Employee Form</div></div>
-                  <!--end::Header-->
-                  <!--begin::Form-->
-                  <form action="emp_insert.php" method="post">
+                  	<!--begin::Header-->
+                  	<div class="card-header"><div class="card-title">Attendance Form</div></div>
+                  	<!--end::Header-->
+                  	<!--begin::Form-->
+                  	<form action="emp_insert.php" method="post">
                     <!--begin::Body-->
-                    <div class="card-body">
-						<div class="row mb-3">
-							<label for="f_name" class="col-sm-2 col-form-label">First Name</label>
-							<div class="col-sm-10">
-							  <input type="taxt" name="first_name" class="form-control" id="f_name" />
+						<div class="card-body">
+							<div class="row mb-3">
+								<label for="emp_name" class="col-sm-2 col-form-label">Employee Name</label>
+								<div class="col-sm-10">
+								<input type="taxt" name="employee_name" class="form-control" id="emp_name" />
+								</div>
 							</div>
-						</div>
-						<div class="row mb-3">
-							<label for="l_name" class="col-sm-2 col-form-label">Last Name</label>
-							<div class="col-sm-10">
-								<input type="taxt" name="last_name" class="form-control" id="l_name" />
+							<div class="row mb-3">
+								<label for="i_time" class="col-sm-2 col-form-label">In Time</label>
+								<div class="col-sm-10">
+									<input type="time" name="in_time" class="form-control" id="i_time" />
+								</div>
 							</div>
-						</div>
-						<div class="row mb-3">
-							<label for="phone" class="col-sm-2 col-form-label">Phone</label>
-							<div class="col-sm-10">
-								<input type="number" name="phone" class="form-control" id="phone" />
+							<div class="row mb-3">
+								<label for="o_time" class="col-sm-2 col-form-label">Out Time</label>
+								<div class="col-sm-10">
+									<input type="time" name="out_time" class="form-control" id="o_time" />
+								</div>
 							</div>
-						</div>
-						<div class="row mb-3">
-							<label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-							<div class="col-sm-10">
-								<input type="email" name="email" class="form-control" id="inputEmail3" />
-							</div>
-						</div>
-						<div class="row mb-3">
-							<label for="salaryLebel" class="form-label">Salary</label>
-							<div class="col-sm-10">
-								<?php
-									$data="select id,amount from salary"; 
-									$salary_data=$conn->query($data); 			 
-								?>
-								<select name="salary_id" class="form-select" id="salaryLebel" >
-									<option value="0">Select Salary</option>
+							<div class="row mb-3">
+								<label for="shift_i" class="col-sm-2 col-form-label">Shift In</label>
+								<div class="col-sm-10">
+									<input type="timestamp" name="shift_in" class="form-control" id="shift_i" />
+								</div>
+							</div>	
+							<div class="row mb-3">
+								<label for="shift_o" class="col-sm-2 col-form-label">Shift Out</label>
+								<div class="col-sm-10">
+									<input type="timestamp" name="shift_out" class="form-control" id="shift_o" />
+								</div>
+							</div>						
+							<div class="row mb-3">
+								<label for="over_t" class="col-sm-2 col-form-label">Over Time</label>
+								<div class="col-sm-10">
+									<input type="timestamp" name="over_time" class="form-control" id="over_t" />
+								</div>
+							</div>							
+							
+							<div class="row mb-3">
+								<label for="dayLebel" class="form-label">Day</label>
+								<div class="col-sm-10">
 									<?php
-										while($row=$salary_data->fetch_assoc()){					 
+										$all_weekend_arr = array(1 => "Saturday", 2 => "Sunday", 3 => "Monday", 4 => "Tuesday", 5 => "Wednesday", 6 => "Thursday", 7 => "Friday");
 									?>
-									<option value="<?php echo $row['id']; ?>"> <?php echo $row['amount']; ?></option>
-									<?php
-										}
-									?>
-								</select>
+									<select name="day_id" class="form-select" id="dayLebel" >
+										<option value="0">Select Day</option>
+										<?php
+											foreach($all_weekend_arr as $key => $dayName) {
+											if($key ==  $row['day_id']) {
+												$selected = "selected";
+											} else {
+												$selected = "";
+											}
+										?>
+										<option value="<?php echo $key; ?>"> <?php echo $dayName; ?></option>
+										<?php
+											}
+										?>
+									</select>
+								</div>
 							</div>
-						</div>
-						<div class="row mb-3">
-							<label for="inputComision" class="col-sm-2 col-form-label">Comision</label>
-							<div class="col-sm-10">
-								<input type="number" name="comision" class="form-control" id="inputComision" />
+							<div class="row mb-3">
+								<label for="month_lbl" class="col-sm-2 col-form-label">Month</label>
+								<div class="col-sm-10">
+									<input type="month" name="month" class="form-control" id="month_lbl" />
+								</div>
 							</div>
+							<div class="row mb-3">
+								<label for="resign_date" class="col-sm-2 col-form-label">Resign Date</label>
+								<div class="col-sm-10">
+									<input type="date" name="resign_date" class="form-control" id="resign_date" />
+								</div>
+							</div>													
 						</div>
-						<div class="row mb-3">
-							<label for="emp_code" class="col-sm-2 col-form-label">Employee Code</label>
-							<div class="col-sm-10">
-								<input type="number" name="employee_code" class="form-control" id="emp_code" />
-							</div>
-						</div>
-						<div class="row mb-3">
-							<label for="departmentLebel" class="form-label">Department</label>
-							<div class="col-sm-10">
-								<?php
-									$data="select id,name from departments";
-									$department_data=$conn->query($data);
-								?>
-								<select name="department_id" class="form-select" id="departmentLebel" >
-									<option value="0">Select Department</option>
-									<?php
-										while($row=$department_data->fetch_assoc()){					 
-									?>
-									<option value="<?php echo $row['id']; ?>"> <?php echo $row['name']; ?></option>
-									<?php
-										}
-									?>
-								</select>
-							</div>
-						</div>
-						<div class="row mb-3">
-							<label for="jobLebel" class="form-label">Job</label>
-							<div class="col-sm-10">
-								<?php
-									$data="select id,job_title from jobs";
-									$job_data=$conn->query($data);
-								?>
-								<select name="job_id" class="form-select" id="jobLebel" >
-									<option value="0">Select Job</option>
-									<?php
-										while($row=$job_data->fetch_assoc()){					 
-									?>
-									<option value="<?php echo $row['id']; ?>"> <?php echo $row['job_title']; ?></option>
-									<?php
-										}
-									?>
-								</select>
-							</div>
-						</div>
-						<div class="row mb-3">
-							<label for="join_date" class="col-sm-2 col-form-label">Joining Date</label>
-							<div class="col-sm-10">
-								<input type="date" name="joining_date" class="form-control" id="join_date" />
-							</div>
-						</div>
-						<div class="row mb-3">
-							<label for="resign_date" class="col-sm-2 col-form-label">Resign Date</label>
-							<div class="col-sm-10">
-								<input type="date" name="resign_date" class="form-control" id="resign_date" />
-							</div>
-						</div>
-						<div class="row mb-3">
-							<label for="locationLebel" class="form-label">Location</label>
-							<div class="col-sm-10">
-								<?php
-									$data="select id,address from locations";
-									$location_data=$conn->query($data);
-								?>
-								<select name="location_id" class="form-select" id="locationLebel" >
-									<option value="0">Select Location</option>
-									<?php
-										while($row=$location_data->fetch_assoc()){					 
-									?>
-									<option value="<?php echo $row['id']; ?>"> <?php echo $row['address']; ?></option>
-									<?php
-										}
-									?>
-								</select>
-							</div>
-						</div>
-						<div class="row mb-3">
-							<label for="religionLebel" class="form-label">Religion</label>
-							<div class="col-sm-10">
-								<?php
-									$data="select id,name from religions"; 			 
-									$religion_data=$conn->query($data);
-								?>
-								<select name="religion_id" class="form-select" id="religionLebel" >
-									<option value="0">Select Religion</option>
-									<?php
-										while($row=$religion_data->fetch_assoc()){					 
-									?>
-									<option value="<?php echo $row['id']; ?>"> <?php echo $row['name']; ?></option>
-									<?php
-										}
-									?>
-								</select>
-							</div>
-						</div>
-                    </div>
-                    <!--end::Body-->
+						<!--end::Body-->
                     <!--begin::Footer-->
                     <div class="card-footer">
                       <button type="submit" class="btn btn-warning">Sign in</button>

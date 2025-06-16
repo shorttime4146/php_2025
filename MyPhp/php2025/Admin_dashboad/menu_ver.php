@@ -259,7 +259,7 @@
 					</ul>
 					<ul class="nav nav-treeview">
 						<li class="nav-item">
-							<a href="employee_all_data_view.php" class="nav-link"> 
+							<a href="emp_all_data_view.php" class="nav-link"> 
 								<i class="nav-icon bi bi-circle"></i>
 								<p>Employee All Data Views</p>
 							</a>
@@ -270,6 +270,39 @@
 							<a href="emp_update_form.php" class="nav-link"> 
 								<i class="nav-icon bi bi-circle"></i>
 								<p>Employee Update Form</p>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">
+						<i class="nav-icon bi bi-people-fill"></i>
+						<p>
+							Attendance
+							<i class="nav-arrow bi bi-chevron-right"></i>
+						</p>
+					</a>
+					<ul class="nav nav-treeview">
+						<li class="nav-item">
+							<a href="atten_insert_form .php" class="nav-link"> 
+								<i class="nav-icon bi bi-circle"></i>
+								<p>Attendance Insert Form</p>
+							</a>
+						</li>
+					</ul>
+					<ul class="nav nav-treeview">
+						<li class="nav-item">
+							<a href="atten_all_data_view.php" class="nav-link"> 
+								<i class="nav-icon bi bi-circle"></i>
+								<p>Attendance All Data Views</p>
+							</a>
+						</li>
+					</ul>
+					<ul class="nav nav-treeview">
+						<li class="nav-item">
+							<a href="atten_update_form.php" class="nav-link"> 
+								<i class="nav-icon bi bi-circle"></i>
+								<p>Attendance Update Form</p>
 							</a>
 						</li>
 					</ul>

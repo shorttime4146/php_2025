@@ -63,48 +63,48 @@
                     <table class="table table-bordered">
                       <thead align="center">
                         <tr>
-							<td width="50px">Id</td>
-							<td width="200px">First Name</td>
-							<td width="200px">Last Name</td>
-							<td width="200px">Email</td>
-							<td width="100px">Phone</td>
-							<td width="150px">Employee Code</td> 
-							<td width="100px">Joining Date</td>
-							<td width="100px">Resign Date</td>
-							<td width="100px">Comision</td>
-							<td width="100px">Salary</td>
-							<td width="100px">Job Title</td>
-							<td width="100px">Department</td>
-							<td width="100px">Location</td>  
-							<td width="100px">Religion</td>
-							<td width="200px" colspan="2">Action</td>
+                          <td width="50px">Id</td>
+                          <td width="200px">First Name</td>
+                          <td width="200px">Last Name</td>
+                          <td width="200px">Email</td>
+                          <td width="100px">Phone</td>
+                          <td width="150px">Employee Code</td> 
+                          <td width="100px">Joining Date</td>
+                          <td width="100px">Resign Date</td>
+                          <td width="100px">Comision</td>
+                          <td width="100px">Salary</td>
+                          <td width="100px">Job Title</td>
+                          <td width="100px">Department</td>
+                          <td width="100px">Location</td>  
+                          <td width="100px">Religion</td>
+                          <td width="200px" colspan="2">Action</td>
                         </tr>
                       </thead>
                       <tbody>
-                       <?php 
-							while($row=$view->fetch_assoc()){
+                        <?php 
+							            while($row=$view->fetch_assoc()){
                         ?>
                         <tr>
-                            <td width="50px"><?php echo $row['id']; ?></td>
-							<td width="200px"><?php echo $row['first_name']; ?></td>
-							<td width="200px"><?php echo $row['last_name']; ?></td>
-							<td width="200px"><?php echo $row['email']; ?></td>
-							<td width="100px"><?php echo $row['phone']; ?></td>
-							<td width="150px"><?php echo $row['employee_code']; ?></td> 
-							<td width="100px"><?php echo $row['joining_date']; ?></td>
-							<td width="100px"><?php echo $row['resign_date']; ?></td>
-							<td width="100px"><?php echo $row['comision']; ?></td>
-							<td width="100px"><?php echo $row['amount']; ?></td>
-							<td width="100px"><?php echo $row['job_title']; ?></td>
-							<td width="100px"><?php echo $row['name']; ?></td>
-							<td width="100px"><?php echo $row['address']; ?></td> 
-							<td width="100px"><?php echo $row['name']; ?></td>
-                            <td width="50px">
-                              <a href="emp_update_form.php?id=<?php echo $row['id']; ?>">Update</a>
-                            </td>
-                            <td width="50px">
-                              <a href="emp_delete.php?id=<?php echo $row['id']; ?>">Delete</a>
-                            </td>
+                          <td width="50px"><?php echo $row['id']; ?></td>
+                          <td width="200px"><?php echo $row['first_name']; ?></td>
+                          <td width="200px"><?php echo $row['last_name']; ?></td>
+                          <td width="200px"><?php echo $row['email']; ?></td>
+                          <td width="100px"><?php echo $row['phone']; ?></td>
+                          <td width="150px"><?php echo $row['employee_code']; ?></td> 
+                          <td width="100px"><?php echo $row['joining_date']; ?></td>
+                          <td width="100px"><?php echo $row['resign_date']; ?></td>
+                          <td width="100px"><?php echo $row['comision']; ?></td>
+                          <td width="100px"><?php echo $row['amount']; ?></td>
+                          <td width="100px"><?php echo $row['job_title']; ?></td>
+                          <td width="100px"><?php echo $row['name']; ?></td>
+                          <td width="100px"><?php echo $row['address']; ?></td> 
+                          <td width="100px"><?php echo $row['name']; ?></td>
+                          <td width="50px">
+                            <a href="emp_update_form.php?id=<?php echo $row['id']; ?>">Update</a>
+                          </td>
+                          <td width="50px">
+                            <a href="emp_delete.php?id=<?php echo $row['id']; ?>">Delete</a>
+                          </td>
                         </tr>
                         <?php 
                             }
