@@ -60,13 +60,32 @@
                   	<div class="card-header"><div class="card-title">Attendance Form</div></div>
                   	<!--end::Header-->
                   	<!--begin::Form-->
-                  	<form action="emp_insert.php" method="post">
+                  	<form action="atten_insert.php" method="post">
 						<!--begin::Body-->
 							<div class="card-body">
 								<div class="row mb-3">
 									<label for="emp_name" class="col-sm-2 col-form-label">Employee Name</label>
 									<div class="col-sm-10">
 									<input type="taxt" name="employee_name" class="form-control" id="emp_name" />
+									</div>
+								</div>
+								<div class="row mb-3">
+									<label for="empLebel" class="form-label">Employee Name</label>
+									<div class="col-sm-10">
+										<?php
+											$data="select id,first_name from employees"; 
+											$emp_data=$conn->query($data); 			 
+										?>
+										<select name="employee_id" class="form-select" id="empLebel" >
+											<option value="0">Select Employee</option>
+											<?php
+												while($row=$emp_data->fetch_assoc()){					 
+											?>
+											<option value="<?php echo $row['id']; ?>"> <?php echo $row['first_name']; ?></option>
+											<?php
+												}
+											?>
+										</select>
 									</div>
 								</div>
 								<div class="row mb-3">
@@ -148,9 +167,9 @@
 									</div>
 								</div>
 								<div class="row mb-3">
-									<label for="resign_date" class="col-sm-2 col-form-label">Resign Date</label>
+									<label for="statusLebel" class="col-form">Status Type</label>
 									<div class="col-sm-10">
-										<input type="date" name="resign_date" class="form-control" id="resign_date" />
+										<input type="number" name="status_type" class="form-control" id="statusLebel" />
 									</div>
 								</div>													
 							</div>

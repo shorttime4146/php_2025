@@ -99,7 +99,7 @@
                     <!--end::Body-->
                     <!--begin::Footer-->
                     <div class="card-footer">
-                      <button type="submit" class="btn btn-warning">Sign in</button>
+                      <button type="submit" class="btn btn-warning">Insert</button>
                       <button type="submit" class="btn float-end">Cancel</button>
                     </div>
                     <!--end::Footer-->

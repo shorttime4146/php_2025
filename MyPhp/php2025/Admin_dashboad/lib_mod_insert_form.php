@@ -60,21 +60,21 @@
                   <div class="card-header"><div class="card-title">Module Form</div></div>
                   <!--end::Header-->
                   <!--begin::Form-->
-                  <form action="lib_menu_insert.php" method="post">
+                  <form action="lib_mod_insert.php" method="post">
                     <!--begin::Body-->
                     <div class="card-body">
-						<div class="row mb-3">
-							<label for="name" class="col-sm-2 col-form-label">Name</label>
-							<div class="col-sm-10">
-							  <input type="taxt" name="name" class="form-control" id="name" />
-							</div>
-						</div>
-						<div class="row mb-3">
-							<label for="Sequ" class="col-sm-2 col-form-label">Sequence</label>
-							<div class="col-sm-10">
-							  <input type="number" name="sequence" class="form-control" id="Sequ" />
-							</div>
-						</div>                 
+                      <div class="row mb-3">
+                         <label for="name" class="col-sm-2 col-form-label">Name</label>
+                        <div class="col-sm-10">
+                          <input type="taxt" name="name" class="form-control" id="name" />
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="Sequ" class="col-sm-2 col-form-label">Sequence</label>
+                        <div class="col-sm-10">
+                          <input type="number" name="sequence" class="form-control" id="Sequ" />
+                        </div>
+                      </div>                 
                     </div>
                     <!--end::Body-->
                     <!--begin::Footer-->

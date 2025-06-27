@@ -7,56 +7,45 @@
 	if($conn->connect_error){
 		die("Database Connection Failed.".$conn->connect_error);
 	}else{
-		echo"Database Connection Successfuly."."</br>";
+		//echo"Database Connection Successfuly."."</br>";
 	}
 	
-	$fn=""; $ln=""; $phn=""; $eml=""; $comi=0; $ec=0; $jd=""; $rd=""; $salary_id=""; $department_id=""; 
-	$job_id=""; $location_id=""; $religion_id="";
+	$empName=""; $in=""; $out=""; $shiftIn=""; $shiftOut=""; $over=""; $day_id=""; $month_id=""; $status=""; 
+	
 	if($_SERVER["REQUEST_METHOD"] =="POST"){
-		if($_POST["first_name"] !=""){
-			$fn=$_POST["first_name"];
+		if($_POST["employee_id"] !=""){
+			$empName=$_POST["employee_id"];
 		}
-		if($_POST["last_name"] !=""){
-			$ln=$_POST["last_name"];
+		if($_POST["in_time"] !=""){
+			$in=$_POST["in_time"];
 		}
-		if($_POST["phone"] !=""){
-			$phn=$_POST["phone"];
+		if($_POST["out_time"] !=""){
+			$out=$_POST["out_time"];
 		}
-		if($_POST["email"] !=""){
-			$eml=$_POST["email"];
+		if($_POST["shift_in"] !=""){
+			$shiftIn=$_POST["shift_in"];
 		}
-		if($_POST["comision"] !=""){
-			$comi=$_POST["comision"];
+		if($_POST["shift_out"] !=""){
+			$shiftOut=$_POST["shift_out"];
+		}		
+		if($_POST["over_time"] !=""){
+			$over=$_POST["over_time"];
 		}
-		if($_POST["employee_code"] !=""){
-			$ec=$_POST["employee_code"];
+		if($_POST["day_id"] !=""){
+			$day_id=$_POST["day_id"];
 		}
-		if($_POST["joining_date"] !=""){
-			$jd=$_POST["joining_date"];
+		if($_POST["month_id"] !=""){
+			$month_id=$_POST["month_id"];
 		}
-		if($_POST["resign_date"] !=""){
-			$rd=$_POST["resign_date"];
-		}
-		if($_POST["salary_id"] !=""){
-			$salary_id=$_POST["salary_id"];
-		}
-		if($_POST["department_id"] !=""){
-			$department_id=$_POST["department_id"];
-		}
-		if($_POST["job_id"] !=""){
-			$job_id=$_POST["job_id"];
-		}
-		if($_POST["location_id"] !=""){
-			$job_id=$_POST["location_id"];
-		}
-		if($_POST["religion_id"] !=""){
-			$job_id=$_POST["religion_id"];
-		}
+		if($_POST["status_type"] !=""){
+			$status=$_POST["status_type"];
+		}		
 		
-		$data="insert into employees(first_name, last_name, phone, email, comision, employee_code, joining_date, resign_date, salary_id, department_id, job_id, location_id, religion_id) 
-			value('$fn', '$ln', '$phn', '$eml', '$comi', '$ec', '$jd', '$rd', '$salary_id', '$department_id', '$job_id', '$location_id', '$religion_id')";
+		$data="insert into attendance(employee_id, in_time, out_time, shift_in, shift_out, over_time, day_id, month_id, status_type) 
+			value('$empName', '$in', '$out', '$shiftIn', '$shiftOut', '$over', '$day_id', '$month_id', '$status')";
 		if($conn->query($data) ==1){
-			header("location:employee_all_data_view.php");
+			//header("location:atten_all_data_view.php");
+			echo"Database Connection Successfuly.";
 		}else{
 			echo"Error." .$data ."</br>" .$conn->error;
 		}
