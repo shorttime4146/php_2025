@@ -51,10 +51,12 @@
                     <table class="table table-bordered">
                       <thead>
                         <tr>
-                          <th style="width: 10px">#</th>
-                          <th>Task</th>
-                          <th>Progress</th>
-                          <th style="width: 40px">Label</th>
+                          <!-- <th style="width: 10px">#</th>  -->
+                          <th>Tittle</th>
+                          <th>Marks</th>
+                          <th>Time Limit</th>
+                          <th>Date</th>
+                          <th>Description </th>
                         </tr>
                       </thead>
                       <tbody>
