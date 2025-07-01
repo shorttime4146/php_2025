@@ -1,4 +1,10 @@
-
+<?php 
+	$server="localhost";
+	$user="root";
+	$password="";
+	$database="quize_app";
+	$conn=new mysqli($server, $user, $password, $database);
+?>
 
 <?php require 'header.php'; ?>
   <?php require 'nav_bar.php'; ?>
@@ -11,11 +17,11 @@
           <div class="container-fluid">
             <!--begin::Row-->
             <div class="row">
-              <div class="col-sm-6"><h3 class="mb-0">General Form</h3></div>
+              <div class="col-sm-6"><h3 class="mb-0">Quize Form</h3></div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-end">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">General Form</li>
+                  <li class="breadcrumb-item active" aria-current="page">Quize Form</li>
                 </ol>
               </div>
             </div>
@@ -39,78 +45,47 @@
                 <!--begin::Horizontal Form-->
                 <div class="card card-warning card-outline mb-12">
                   <!--begin::Header-->
-                  <div class="card-header"><div class="card-title">Horizontal Form</div></div>
+                  <div class="card-header"><div class="card-title">Quize Form</div></div>
                   <!--end::Header-->
                   <!--begin::Form-->
-                  <form>
+                  <form action="quize_insert.php" method="post">
                     <!--begin::Body-->
                     <div class="card-body">
                       <div class="row mb-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                        <label for="tittleLabel" class="col-sm-2 col-form-label">Tittle</label>
                         <div class="col-sm-10">
-                          <input type="email" class="form-control" id="inputEmail3" />
+                          <input type="text" name ="tittle" class="form-control" id="tittleLabel" />
                         </div>
                       </div>
                       <div class="row mb-3">
-                        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                        <label for="markLabel" class="col-sm-2 col-form-label">Marks</label>
                         <div class="col-sm-10">
-                          <input type="password" class="form-control" id="inputPassword3" />
+                          <input type="number" name ="marks" class="form-control" id="markLabel" />
                         </div>
                       </div>
-                      <fieldset class="row mb-3">
-                        <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-                        <div class="col-sm-10">
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="radio"
-                              name="gridRadios"
-                              id="gridRadios1"
-                              value="option1"
-                              checked
-                            />
-                            <label class="form-check-label" for="gridRadios1"> First radio </label>
-                          </div>
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="radio"
-                              name="gridRadios"
-                              id="gridRadios2"
-                              value="option2"
-                            />
-                            <label class="form-check-label" for="gridRadios2"> Second radio </label>
-                          </div>
-                          <div class="form-check disabled">
-                            <input
-                              class="form-check-input"
-                              type="radio"
-                              name="gridRadios"
-                              id="gridRadios3"
-                              value="option3"
-                              disabled
-                            />
-                            <label class="form-check-label" for="gridRadios3">
-                              Third disabled radio
-                            </label>
-                          </div>
-                        </div>
-                      </fieldset>
                       <div class="row mb-3">
-                        <div class="col-sm-10 offset-sm-2">
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck1" />
-                            <label class="form-check-label" for="gridCheck1">
-                              Example checkbox
-                            </label>
-                          </div>
+                        <label for="timeLabel" class="col-sm-2 col-form-label">Time Limit</label>
+                        <div class="col-sm-10">
+                          <input type="text" name ="time_limit" class="form-control" id="timeLabel" />
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="dateLabel" class="col-sm-2 col-form-label">Date</label>
+                        <div class="col-sm-10">
+                          <input type="date" name ="date" class="form-control" id="dateLabel" />
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="descripLabel" class="col-sm-2 col-form-label">Description </label>
+                        <div class="col-sm-10">
+                          <input type="text" name ="description" class="form-control" id="descripLabel" />
                         </div>
                       </div>
                     </div>
                     <!--end::Body-->
                     <!--begin::Footer-->
                     <div class="card-footer">
-                      <button type="submit" class="btn btn-warning">Sign in</button>
+                      <button type="submit" class="btn btn-warning">Insert Now</button>
                       <button type="submit" class="btn float-end">Cancel</button>
                     </div>
                     <!--end::Footer-->
