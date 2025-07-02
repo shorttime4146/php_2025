@@ -198,7 +198,7 @@
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
-                  <i class="nav-icon bi bi-table"></i>
+                  <i class="nav-icon bi bi-question-circle"></i>
                   <p>
                     Quize
                     <i class="nav-arrow bi bi-chevron-right"></i>
@@ -209,6 +209,40 @@
                     <a href="quize_insert_form.php" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Quize Insert Form</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon bi bi-question-circle"></i>
+                  <p>
+                    Question
+                    <i class="nav-arrow bi bi-chevron-right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="question_insert_form.php" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>Question Insert Form</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="bi bi-option"></i>
+                  <p>
+                    Option
+                    <i class="nav-arrow bi bi-chevron-right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="option_insert_form.php" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>Option Insert Form</p>
                     </a>
                   </li>
                 </ul>
