@@ -54,7 +54,7 @@
                       <div class="row mb-3">
                         <label for="nameLabel" class="col-sm-2 col-form-label">Name</label>
                         <div class="col-sm-10">
-                          <input type="text" name ="name " class="form-control" id="nameLabel" />
+                          <input type="text" name ="name" class="form-control" id="nameLabel" />
                         </div>
                       </div>
                       <div class="row mb-3">

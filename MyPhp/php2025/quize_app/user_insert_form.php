@@ -17,11 +17,11 @@
           <div class="container-fluid">
             <!--begin::Row-->
             <div class="row">
-              <div class="col-sm-6"><h3 class="mb-0">Option Form</h3></div>
+              <div class="col-sm-6"><h3 class="mb-0">User Form</h3></div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-end">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Option Form</li>
+                  <li class="breadcrumb-item active" aria-current="page">User Form</li>
                 </ol>
               </div>
             </div>
@@ -45,29 +45,41 @@
                 <!--begin::Horizontal Form-->
                 <div class="card card-warning card-outline mb-12">
                   <!--begin::Header-->
-                  <div class="card-header"><div class="card-title">Option Form</div></div>
+                  <div class="card-header"><div class="card-title">User Form</div></div>
                   <!--end::Header-->
                   <!--begin::Form-->
-                  <form action="option_insert.php" method="post">
+                  <form action="user_insert.php" method="post">
                     <!--begin::Body-->
                     <div class="card-body">
                       <div class="row mb-3">
-                        <label for="nmLabel" class="col-sm-2 col-form-label">Name</label>
+                        <label for="nameLabel" class="col-sm-2 col-form-label">Name</label>
                         <div class="col-sm-10">
-                          <input type="text" name ="name" class="form-control" id="nmLabel" />
+                          <input type="text" name ="name" class="form-control" id="nameLabel" />
                         </div>
                       </div>
                       <div class="row mb-3">
-							          <label for="quesLebel" class="form-label">Question</label>
+                        <label for="phnLabel" class="col-sm-2 col-form-label">Phone</label>
+                        <div class="col-sm-10">
+                          <input type="number" name ="phone" class="form-control" id="phnLabel" />
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="emailLabel" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                          <input type="email" name ="email" class="form-control" id="emailLabel" />
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+							          <label for="roleLebel" class="form-label">Role</label>
                         <div class="col-sm-10">
                           <?php
                             $data="select id,name from question"; 
-                            $ques_data=$conn->query($data); 			 
+                            $role_data=$conn->query($data); 			 
                           ?>
-                          <select name="question_id" class="form-select" id="quesLebel" >
-                            <option value="0">Select Question</option>
+                          <select name="role_id" class="form-select" id="roleLebel" >
+                            <option value="0">Select Role</option>
                             <?php
-                              while($row=$ques_data->fetch_assoc()){					 
+                              while($row=$role_data->fetch_assoc()){					 
                             ?>
                             <option value="<?php echo $row['id']; ?>"> <?php echo $row['name']; ?></option>
                             <?php
@@ -76,12 +88,6 @@
                           </select>
                         </div>
                       </div>
-                      <div class="row mb-3">
-                        <label for="corrLabel" class="col-sm-2 col-form-label">Is Correct </label>
-                        <div class="col-sm-10">
-                          <input type="number" name ="is_correct" class="form-control" id="corrLabel" />
-                        </div>
-                      </div>                      
                     </div>
                     <!--end::Body-->
                     <!--begin::Footer-->

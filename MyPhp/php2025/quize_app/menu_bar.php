@@ -215,6 +215,40 @@
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
+                  <i class="nav-icon bi bi-person-circle"></i>
+                  <p>
+                    User
+                    <i class="nav-arrow bi bi-chevron-right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="user_insert_form.php" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>User Insert Form</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon bi bi-person-circle"></i>
+                  <p>
+                    Role
+                    <i class="nav-arrow bi bi-chevron-right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="role_insert_form.php" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>Role Insert Form</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
                   <i class="nav-icon bi bi-question-circle"></i>
                   <p>
                     Question
@@ -243,6 +277,23 @@
                     <a href="option_insert_form.php" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Option Insert Form</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon bi bi-person-circle"></i>
+                  <p>
+                    User Answer
+                    <i class="nav-arrow bi bi-chevron-right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="us_ans_insert_form.php" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>User Answer Insert Form</p>
                     </a>
                   </li>
                 </ul>
