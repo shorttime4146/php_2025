@@ -298,6 +298,23 @@
                   </li>
                 </ul>
               </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon bi bi-list"></i>
+                  <p>
+                    Result
+                    <i class="nav-arrow bi bi-chevron-right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="result_insert_form.php" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>Result Insert Form</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
               <li class="nav-header">EXAMPLES</li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
